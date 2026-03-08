@@ -1,0 +1,20 @@
+body { font-family: sans-serif; background: #0f172a; color: white; margin: 0; padding: 20px; }
+.container { max-width: 800px; margin: auto; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+select { background: #1e293b; color: white; padding: 8px; border-radius: 6px; }
+
+#map { height: 300px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #334155; }
+
+.warning-card { padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; }
+.danger { background: #7f1d1d; border: 1px solid #ef4444; }
+.safe { background: #064e3b; border: 1px solid #10b981; }
+
+.top-row { display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; margin-bottom: 20px; }
+.window-card { background: #1e293b; padding: 20px; border-radius: 12px; text-align: center; border: 1px solid #3b82f6; }
+
+.stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; }
+.stat-card { background: #1e293b; padding: 15px; border-radius: 10px; text-align: center; }
+.stat-card h3 { font-size: 0.75rem; color: #94a3b8; margin: 0; }
+.stat-card p { font-size: 1.25rem; font-weight: bold; margin: 5px 0 0; }
+
+@media (max-width: 600px) { .top-row { grid-template-columns: 1fr; } }

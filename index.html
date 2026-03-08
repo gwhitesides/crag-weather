@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CragWeather Pro | Sending Conditions</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧗‍♂️ CragWeather Pro</h1>
+            <select id="locationSelect">
+                <option value="39.25,-111.12">Joe's Valley, UT</option>
+                <option value="40.57,-111.74">Little Cottonwood, UT</option>
+                <option value="37.73,-119.57">Yosemite (El Cap), CA</option>
+                <option value="36.13,-115.42">Red Rock, NV</option>
+            </select>
+        </header>
+
+        <div id="rock-warning" class="warning-card" style="display:none;"></div>
+
+        <section class="top-row">
+            <div id="map"></div>
+            <div class="window-card">
+                <h3>💎 Best 4-Hour Window</h3>
+                <p id="best-time">Analyzing...</p>
+                <small id="best-details">--</small>
+            </div>
+        </section>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Temp</h3>
+                <p id="temp">--°C</p>
+            </div>
+            <div class="stat-card">
+                <h3>Friction</h3>
+                <p id="humidity">--%</p>
+            </div>
+            <div class="stat-card">
+                <h3>Past 24h Rain</h3>
+                <p id="past-rain">0.00mm</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
